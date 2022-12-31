@@ -1,10 +1,16 @@
 {
-    "name": "ashok/web-story",
+    "name": "Devatwal/laravel-webstory",
+    "description": "A Web Story package for laravel",
     "authors": [
         {
             "name": "Ashok Devatwal",
             "email": "ashokdevatwal@tractorjunction.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Devatwal\\laravel-webstory": "src/"
+        }
+    }
 }
