@@ -1,0 +1,10 @@
+{
+    "name": "ashok/web-story",
+    "authors": [
+        {
+            "name": "Ashok Devatwal",
+            "email": "ashokdevatwal@tractorjunction.com"
+        }
+    ],
+    "require": {}
+}
