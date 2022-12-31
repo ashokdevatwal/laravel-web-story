@@ -1,5 +1,5 @@
 {
-    "name": "Devatwal/laravel-webstory",
+    "name": "Devatwal/LaravelWebstory",
     "description": "A Web Story package for laravel",
     "authors": [
         {
@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Devatwal\\laravel-webstory": "src/"
+            "Devatwal\\LaravelWebStory": "src/"
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace Devatwal\WebStory;
+namespace Devatwal\LaravelWebStory;
 
 use Illuminate\Support\ServiceProvider;
 
