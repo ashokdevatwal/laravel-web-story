@@ -5,7 +5,7 @@ namespace Devatwal\LaravelWebStory\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class WebStory extends Model {
-	
+
 	public function scopeActive($query){
 		return $query->where('status',true);
 	}
