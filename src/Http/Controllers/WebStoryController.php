@@ -2,12 +2,13 @@
 
 namespace Devatwal\LaravelWebStory\Http\Controllers;
 
+use Devatwal\LaravelWebStory\Models\WebStory;
 use Illuminate\Routing\Controller;
 
 class WebStoryController extends Controller
 {
     public function index()
     {
-        return 'hello';
+        return WebStory::latest()->get();
     }
 }
