@@ -1,10 +1,11 @@
 <?php
+
 namespace Devatwal\LaravelWebStory;
 
 use Illuminate\Support\ServiceProvider;
 
-class WebStoryServiceProvider extends ServiceProvider {
-    
+class WebStoryServiceProvider extends ServiceProvider
+{
     /**
      * Bootstrap any application services.
      *
@@ -14,7 +15,7 @@ class WebStoryServiceProvider extends ServiceProvider {
     {
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
     }
-    
+
     /**
      * Register any application services.
      *
