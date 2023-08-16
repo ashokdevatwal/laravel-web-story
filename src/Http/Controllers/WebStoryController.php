@@ -2,9 +2,8 @@
 
 namespace Devatwal\LaravelWebStory\Http\Controllers;
 
-use Illuminate\Routing\Controller;
-
 use Devatwal\LaravelWebStory\Models\WebStory;
+use Illuminate\Routing\Controller;
 
 class WebStoryController extends Controller
 {
