@@ -11,4 +11,15 @@ class WebStoryController extends Controller
     {
         return WebStory::latest()->get();
     }
+
+    public function getWebStory($web_story)
+    {
+        $webStory = WebStory::where('slug', $web_story)->first();
+
+        if (!$webStory) {
+            abort(404);
+        }
+
+        return $webStory;
+    }
 }
