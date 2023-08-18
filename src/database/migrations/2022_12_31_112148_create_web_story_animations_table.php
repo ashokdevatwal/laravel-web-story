@@ -1,11 +1,9 @@
 <?php
 
+use Devatwal\LaravelWebStory\Models\WebStoryAnimation;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Illuminate\Support\Facades\Artisan;
-
-use Devatwal\LaravelWebStory\Models\WebStoryAnimation;
 
 class CreateWebStoryAnimationsTable extends Migration
 {
@@ -25,16 +23,16 @@ class CreateWebStoryAnimationsTable extends Migration
 
         $animations = [
             [
-                'name' => 'Fly In Left',
-                'value' => 'fly-in-left'
+                'name'  => 'Fly In Left',
+                'value' => 'fly-in-left',
             ],
             [
-                'name' => 'Fade In',
-                'value' => 'fade-in'
+                'name'  => 'Fade In',
+                'value' => 'fade-in',
             ],
             [
-                'name' => 'Twirl In',
-                'value' => 'twirl-in'
+                'name'  => 'Twirl In',
+                'value' => 'twirl-in',
             ],
             ['name' => 'Fly In Right',      'value' => 'fly-in-right'],
             ['name' => 'Fly In Top',        'value' => 'fly-in-top'],
@@ -49,7 +47,7 @@ class CreateWebStoryAnimationsTable extends Migration
             ['name' => 'Pan Left',          'value' => 'pan-left'],
             ['name' => 'Pan Right',         'value' => 'pan-right'],
             ['name' => 'Pan Up',            'value' => 'pan-up'],
-            ['name' => 'Pan Down',          'value' => 'pan-down']
+            ['name' => 'Pan Down',          'value' => 'pan-down'],
         ];
 
         collect($animations)->each(function ($animation) { WebStoryAnimation::create($animation); });
